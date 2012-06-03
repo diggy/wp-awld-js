@@ -48,7 +48,7 @@ function wp_awld_js_settings_about_page()
 		<h4><span class="icon16 icon-"></span> <?php _e( 'About this plugin', 'wp_awld_js' ); ?></h4>
 		<p><?php _e( 'The <em>Ancient World Linked Data for WordPress</em> plugin was developed by <strong>Peter J. Herrel</strong>.', 'wp_awld_js' ); ?></p>
 		<p><?php _e( 'The author has no affiliations with the Institute for the Study of the Ancient World.', 'wp_awld_js' ); ?></p>
-		<p><?php echo sprintf( __( 'If you like this plugin, <a href="%1s">rate it</a> on WordPress.org or buy the author a <a href="%2s" target="_blank">cup of coffee</a>.', 'wp_awld_js' ), esc_url( 'http://wordpress.org/extend/plugins/search.php?q=awld' ), esc_url( 'http://peterherrel.com/donate/' ) ); ?></p>
+		<p><?php echo sprintf( __( 'If you like this plugin, <a href="%1s">rate it</a> on WordPress.org or buy the author a <a href="%2s" target="_blank">cup of coffee</a>.', 'wp_awld_js' ), esc_url( 'http://wordpress.org/extend/plugins/search.php?q=awld' ), esc_url( 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAY79HJWYKPQE' ) ); ?></p>
 		<ul>
 		<li><?php echo sprintf(	__( 'Plugin <a href="%s" target="_blank">home page</a>', 'wp_awld_js' ), esc_url( 'http://peterherrel.com/wordpress/plugins/wp-awld-js/' ) ); ?></li>
 		<li><?php echo sprintf(	__( 'Plugin <a href="%s" target="_blank">support forums</a>', 'wp_awld_js' ), esc_url( 'http://wordpress.org/support/forum/plugins-and-hacks' ) ); ?></li>

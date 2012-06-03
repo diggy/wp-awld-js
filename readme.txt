@@ -1,6 +1,6 @@
 === Ancient World Linked Data for WordPress ===
 Contributors: donutz
-Donate link: http://peterherrel.com/donate
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAY79HJWYKPQE
 Tags:  links, data, linked data, semantic, isaw, lawdi, awld, awld-js, ancient world, history, science, wikipedia, loc, library of congress, opencontext, pleiades, perseus, pelagios, finds-org, worldcat, nomisma, arachne, trismegistos, papyri, eol, yale
 Requires at least: 3.3
 Tested up to: 3.4
@@ -11,7 +11,9 @@ Adds functionality and visual elements to your WordPress site based on links to 
 
 == Description ==
 
-Awld.js is a javascript library for Ancient World Linked Data. It adds functionality and visual elements to your WordPress powered website based on links to stable URIs relevant to the study of the Ancient World.
+Ancient World Linked Data for WordPress -- Awld.js is a javascript library for Ancient World Linked Data. This plugin adds functionality and visual elements to your WordPress powered website based on links to stable URIs relevant to the study of the Ancient World.
+
+= About awld.js =
 
 Awld.js is a project of the [Institute for the Study of the Ancient World](http://www.nyu.edu/isaw/). The project is overseen by Sebastian Heath. The initial implementation of the library was written by Nick Rabinowitz.
 
