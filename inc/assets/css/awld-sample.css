@@ -152,7 +152,7 @@ position: absolute;
 margin-left: -14px;
 height: 15px;
 width: 28px;
-background: url(../../plugins/wp-awld-js/inc/assets/js/awld/ui/images/arrow.png) no-repeat 0 0;
+background: url(../../plugins/ancient-world-linked-data-for-wordpress/inc/assets/js/awld/ui/images/arrow.png) no-repeat 0 0;
 }
 .awld-pop-inner {
 width: 280px;
@@ -172,7 +172,7 @@ box-shadow: 1px 2px 2px 0 #666666;
 padding: 2px 6px;
 }
 .awld-pop-inner.loading {
-background-image: url(../../plugins/wp-awld-js/inc/assets/js/awld/ui/images/ajax-loader.gif);
+background-image: url(../../plugins/ancient-world-linked-data-for-wordpress/inc/assets/js/awld/ui/images/ajax-loader.gif);
 background-repeat: no-repeat;
 background-position: 50% 50%;
 }

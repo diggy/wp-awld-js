@@ -1,6 +1,6 @@
 (
 	function(){	
-		var icon_url = '../wp-content/plugins/wp-awld-js/inc/assets/images/wp_awld_js_icon.png';	
+		var icon_url = '../wp-content/plugins/ancient-world-linked-data-for-wordpress/inc/assets/images/wp_awld_js_icon.png';	
 		tinymce.create(
 			"tinymce.plugins.AwldShortcodes",
 			{
