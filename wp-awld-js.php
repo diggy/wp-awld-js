@@ -126,6 +126,10 @@ class Wp_Awld_Js
 		// shortcodes
 		add_shortcode( 'awld', array( &$this, 'shortcode' ), 10, 2 );
 		add_shortcode( 'awld_index', array( &$this, 'shortcode_ndx' ), 11, 1 );
+		
+		// filters
+		// add_filter( 'the_excerpt', 'shortcode_unautop');
+		add_filter( 'the_excerpt', 'do_shortcode');
 	}	
 	/**
 	 * Activation
