@@ -32,19 +32,22 @@ class Wp_Awld_Js_Widget_Awld_Index extends WP_Widget {
 	}
 	/** @see WP_Widget */
 	function widget( $args, $instance )
-	{
-		extract($args);
+	{	
+		if( is_singular() && has_awld_shortcode( 'awld' ) )
+		{
+			extract($args);
 
-		$title = $instance['title'];
-		$title = apply_filters('widget_title', $title, $instance, $this->id_base);
+			$title = $instance['title'];
+			$title = apply_filters('widget_title', $title, $instance, $this->id_base);
 		
-		echo $before_widget;
+			echo $before_widget;
 		
-		if ($title) echo $before_title . $title . $after_title;
+			if ($title) echo $before_title . $title . $after_title;
 		
-		echo '<div class="awld-index"></div>';
+			echo '<div class="awld-index"></div>';
 		
-		echo $after_widget;
+			echo $after_widget;
+		}
 	}
 	/** @see WP_Widget->update */
 	function update( $new_instance, $old_instance )

@@ -8,7 +8,7 @@
  * @category	Widgets
  * @author		Peter J. Herrel
  */
-include_once('widget-awld-index.php');
+include_once( 'widget-awld-index.php' );
 
 function wp_awld_js_register_widgets()
 {
