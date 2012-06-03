@@ -29,7 +29,7 @@ $wp_awld_js_settings['settings'] = apply_filters('wp_awld_js_general_settings', 
 	array( 'name' => __( 'General Settings', 'wp_awld_js' ), 'type' => 'title', 'desc' => '', 'id' => 'settings-general' ),
 	array(  
 		'name' => __( 'Scope', 'wp_awld_js' ),
-		'desc' 		=> __( 'Restricts the work of the library to a part of the document.', 'wp_awld_js' ),
+		'desc' 		=> __( 'Restricts the work of the awld.js library to a part of the document.', 'wp_awld_js' ),
 		'id' 		=> 'wp_awld_js_scope',
 		'css' 		=> 'min-width:160px;',
 		'std' 		=> 'post',
