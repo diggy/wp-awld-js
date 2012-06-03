@@ -49,7 +49,7 @@ function wp_awld_js_settings_usage_page()
 	</div>
 	<h3 class="acc"><a href="#"><?php _e( 'Index Widget', 'wp_awld_js' ); ?></a></h3>
 	<div>
-		<p><?php _e( 'The optional widget collects all the enhanced links in your post content and organizes them by type and source.', 'wp_awld_js' ); ?></p>
+		<p><?php _e( 'The optional widget collects all the enhanced links within the scope of awld.js and organizes them by type and source.', 'wp_awld_js' ); ?></p>
 		<p><?php _e( 'The index widget will only appear if the page contains one or more <code>awld</code> shortcodes.', 'wp_awld_js' ); ?></p>
 	</div>
 	<h3 class="acc"><a href="#"><?php _e( 'Widget Implementation', 'wp_awld_js' ); ?></a></h3>
