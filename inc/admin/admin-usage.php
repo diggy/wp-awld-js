@@ -46,6 +46,7 @@ function wp_awld_js_settings_usage_page()
 	<div>
 		<p><img src="<?php echo $wp_awld_js->plugin_dir_url; ?>inc/assets/images/wp_awld_js_icon.png" alt="button" title="button" class="alignright" style="width:24px;border:1px solid #ddd;border-radius:5px;background: #f1f1f1;margin-right:11px;"/><?php _e( 'You can easily insert new shortcodes in your post content via the tinyMCE button added to the visual editor.', 'wp_awld_js' ); ?></p>
 		<p><?php _e( 'Alternatively, you can insert shortcodes with the quicktags added to the HTML editor.', 'wp_awld_js' ); ?></p>
+		<p><?php echo sprintf(	__( 'Visit the <a href="%s">settings tab</a> to activate or deactivate editor buttons functionality.', 'wp_awld_js' ), esc_url( admin_url() . 'options-general.php?page=wp-awld-js-settings&tab=settings' ) ); ?></p>
 	</div>
 	<h3 class="acc"><a href="#"><?php _e( 'Index Widget', 'wp_awld_js' ); ?></a></h3>
 	<div>
