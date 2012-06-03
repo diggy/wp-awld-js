@@ -207,7 +207,7 @@ class Wp_Awld_Js
 			'href' => '',
 			'type' => 'default',
 			'title' => '',
-			'class' => 'external wp-awld-js-link',
+			'class' => 'wp-awld-js-link',
 			'target' => '_blank',
 			'nofollow' => ''
 		), $atts ) );
