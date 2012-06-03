@@ -77,7 +77,7 @@ function wp_awld_js_settings_usage_page()
 </div>
 <script>
 jQuery(function() {
-	jQuery( "#accordion" ).accordion();
+	jQuery( "#accordion" ).accordion({ autoHeight: false });
 });
 </script>
 <?php
