@@ -39,7 +39,6 @@ function wp_awld_js_settings_usage_page()
 			<li><code>$title</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The title attribute of the hyperlink. Empty by default.', 'wp_awld_js' ); ?></li>
 			<li><code>$class</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The CSS classes applied to the hyperlink.', 'wp_awld_js' ); ?></li>
 			<li><code>$target</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The target attribute of the hyperlink. Defaults to <code>_blank</code>.', 'wp_awld_js' ); ?></li>
-			<li><code>$nofollow</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'If value is set to <code>1</code>, nofollow will be added to the rel attribute of the hyperlink.', 'wp_awld_js' ); ?></li>
 		</ul>
 	</div>
 	<h3 class="acc"><a href="#"><?php _e( 'Shortcode Buttons', 'wp_awld_js' ); ?></a></h3>
