@@ -136,18 +136,18 @@ function wp_awld_js_settings_examples_page()
 <table class="wp-list-table widefat fixed awld-scope" cellspacing="0">
 	<thead>
 		<tr>
-			<th scope="col" id="feat" class="manage-column column-title" style="max-width:150px;"><span>Feature</span><span class=""></span></th>
-			<th scope="col" id="sample" class="manage-column column-title"><span>Example</span><span class=""></span></th>
-			<th scope="col" id="code" class="manage-column column-title"><span>Code</span><span class=""></span></th>
-			<th scope="col" id="notes" class="manage-column column-title"><span>Notes</span><span class=""></span></th>
+			<th scope="col" id="feat" class="manage-column column-title" style="max-width:150px;"><span><?php _e( 'Feature', 'wp_awld_js' ); ?></span><span class=""></span></th>
+			<th scope="col" id="sample" class="manage-column column-title"><span><?php _e( 'Example', 'wp_awld_js' ); ?></span><span class=""></span></th>
+			<th scope="col" id="code" class="manage-column column-title"><span><?php _e( 'Code', 'wp_awld_js' ); ?></span><span class=""></span></th>
+			<th scope="col" id="notes" class="manage-column column-title"><span><?php _e( 'Notes', 'wp_awld_js' ); ?></span><span class=""></span></th>
 		</tr>
 	</thead>
 	<tbody id="wp-awld-js-list">
 		<tr valign="top">
-			<td><p><strong>Widget</strong></p></td>
+			<td><p><strong><?php _e( 'Widget', 'wp_awld_js' ); ?></strong></p></td>
 			<td style="overflow:visible;"><div class="awld-index"></div></td>
 			<td><p><code>[awld_index]</code></p></td>
-			<td><p class="description">Auto-generated index of awld.js links found on the page.</p></td>
+			<td><p class="description"><?php _e( 'Auto-generated index of awld.js enhanced links found on the page.', 'wp_awld_js' ); ?></p></td>
 		</tr>
 		<?php
 			foreach( $examples as $example ) : 
@@ -167,7 +167,7 @@ function wp_awld_js_settings_examples_page()
 		?>
 	</tbody>
 </table>
-<p class="description" style="text-align:right;">Last updated: 03 Jun 2012</p>
+<p class="description" style="text-align:right;"><?php _e( 'Last updated:', 'wp_awld_js' ); ?> 03 Jun 2012</p>
 <?php
 }
 }
