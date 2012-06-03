@@ -59,7 +59,7 @@ Find out more about the awld.js project on [Github](http://isawnyu.github.com/aw
 
 = Where can I report bugs or request new features? =
 
-Bugs related to the awld.js library can be reported on the [awld.js GitHub repository](https://github.com/isawnyu/awld-js/issues).
+Bugs related to the awld.js library can be reported on [GitHub](https://github.com/isawnyu/awld-js/issues).
 
 Bugs related to the WordPress plugin can be reported on the [WordPress support forums](http://wordpress.org/support/plugin/ancient-world-linked-data-for-wordpress) or on [GitHub](https://github.com/diggy/wp-awld-js/issues).
 
