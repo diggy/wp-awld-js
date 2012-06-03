@@ -37,7 +37,7 @@ function wp_awld_js_settings_usage_page()
 			<li><code>$type</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The type, valid values include: <code>default</code>, <code>person</code>, <code>object</code>. Defaults to <code>default</code>.', 'wp_awld_js' ); ?></li>
 			<li>--------------------------------------------------------------</li>
 			<li><code>$title</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The title attribute of the hyperlink. Empty by default.', 'wp_awld_js' ); ?></li>
-			<li><code>$class</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The CSS classes applied to the hyperlink.', 'wp_awld_js' ); ?></li>
+			<li><code>$class</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The CSS classes applied to the hyperlink. Defaults to <code>wp-awld-js</code>', 'wp_awld_js' ); ?></li>
 			<li><code>$target</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The target attribute of the hyperlink. Defaults to <code>_blank</code>.', 'wp_awld_js' ); ?></li>
 		</ul>
 	</div>
