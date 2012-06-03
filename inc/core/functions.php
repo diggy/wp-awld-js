@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Awld.js Index Template Tag
+ * Awld.js index template tag
  **/
 function awld_index()
 {
@@ -24,6 +24,26 @@ function awld_index_filter( $content )
 	return $content;
 }
 add_filter( 'the_content', 'awld_index_filter', 11, 1 );
+
+/**
+ * Conditional tag
+ *
+ * Checks if a post contains an awld shortcode
+ *
+ * @param: $shortcode (string) 
+ */
+if ( ! function_exists( 'has_awld_shortcode' ) )
+{
+function has_awld_shortcode( $shortcode = '' )
+{
+	global $post;
+	$obj = get_post( $post->ID );
+	$found = false;
+	if ( ! $shortcode ) return $found;
+	if ( stripos( $obj->post_content, '[' . $shortcode ) !== false ) $found = true;
+	return $found;
+}
+}
 
 /**
  * Sanitize variables
