@@ -31,6 +31,7 @@ function wp_awld_js_settings_about_page()
 		<h4><span class="icon16 icon-"></span> <?php _e( 'Links and resources' ); ?></h4>
 		<ul>
 		<li><?php echo sprintf(	__( 'Awld.js <a href="%s" target="_blank">home page</a>', 'wp_awld_js' ), esc_url( 'http://isawnyu.github.com/awld-js/' ) ); ?></li>
+		<li><?php echo sprintf(	__( 'Awld.js <a href="%s" target="_blank">wiki</a>', 'wp_awld_js' ), esc_url( 'https://github.com/isawnyu/awld-js/wiki' ) ); ?></li>
 		<li><?php echo sprintf(	__( 'Awld.js code repository on <a href="%s" target="_blank">Github</a>', 'wp_awld_js' ), esc_url( 'http://github.com/isawnyu/awld-js' ) ); ?></li>		
 		</ul>
 	</div>
