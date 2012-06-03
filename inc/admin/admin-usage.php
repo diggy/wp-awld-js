@@ -10,7 +10,8 @@ if ( ! function_exists( 'wp_awld_js_settings_usage_page' ) )
 function wp_awld_js_settings_usage_page()
 {
 	global $wp_awld_js;
-	wp_enqueue_style( 'jquery-ui-custom', $wp_awld_js->plugin_dir_url . 'inc/assets/css/admin/jquery-ui.custom.min.css', array(), '1.8.16' );
+	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	wp_enqueue_style( 'jquery-ui-custom', $wp_awld_js->plugin_dir_url . 'inc/assets/css/admin/jquery-ui.custom' . $min . '.css', array(), '1.8.16' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'jquery-ui-accordion' );
 ?>
