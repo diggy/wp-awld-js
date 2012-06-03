@@ -15,7 +15,7 @@ Ancient World Linked Data for WordPress -- Awld.js is a javascript library for A
 
 = About awld.js =
 
-Awld.js is a project of the [Institute for the Study of the Ancient World](http://www.nyu.edu/isaw/). The project is overseen by Sebastian Heath. The initial implementation of the library was written by Nick Rabinowitz.
+Awld.js is a project of the [Institute for the Study of the Ancient World](http://www.nyu.edu/isaw/) (ISAW). The project is overseen by Sebastian Heath. The initial implementation of the library was written by [Nick Rabinowitz](http://nickrabinowitz.com/).
 
 Find out more about the awld.js project on [Github](http://isawnyu.github.com/awld-js/).
 
@@ -53,19 +53,23 @@ Log in to your WordPress admin panel, navigate to the Plugins menu and use the s
 
 Find out more about the awld.js project on [Github](http://isawnyu.github.com/awld-js/).
 
+* [Demo](http://isawnyu.github.com/awld-js/awld-test.html)
+* [Configuration Settings](https://github.com/isawnyu/awld-js/wiki/Configuration-Settings)
+* [Writing Modules](https://github.com/isawnyu/awld-js/wiki/Writing-Modules)
+
 = Where can I report bugs or request new features? =
 
-Bugs related to the awld.js library can be reported on the [awld.js GitHub repository](https://github.com/nrabinowitz/awld-js/issues).
+Bugs related to the awld.js library can be reported on the [awld.js GitHub repository](https://github.com/isawnyu/awld-js/issues).
 
-Bugs related to the WordPress plugin can be reported on the [WordPress support forums](http://wordpress.org/support/forum/plugins-and-hacks) or on [GitHub](https://github.com/nrabinowitz/awld-js/issues).
+Bugs related to the WordPress plugin can be reported on the [WordPress support forums](http://wordpress.org/support/forum/plugins-and-hacks) or on [GitHub](https://github.com/diggy/wp-awld-js/issues).
 
 Idem for feature requests.
 
 = Can I contribute? =
 
-Checkout and contribute to the awld.js source code on the [awld.js GitHub repository](http://github.com/isawnyu/awld-js).
+Checkout and contribute to the awld.js source code on [GitHub](http://github.com/isawnyu/awld-js).
 
-Checkout and contribute to the plugin source code on the [plugin GitHub repository](http://github.com/isawnyu/awld-js).
+Checkout and contribute to the plugin source code on [GitHub](https://github.com/diggy/wp-awld-js).
 
 == Screenshots ==
 
