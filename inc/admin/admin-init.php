@@ -81,7 +81,7 @@ if( ! function_exists( '_wp_awld_js_add_quicktags' ) )
 {
     function _wp_awld_js_add_quicktags()
     { 
-    	if ( ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) ) return;
+    	if ( get_option( 'wp_awld_js_quicktags' ) != 'yes' || ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) ) return;
     	global $pagenow;
     	if( 'post.php' == $pagenow || 'post-new.php' == $pagenow ) :
     	?>
