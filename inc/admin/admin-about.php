@@ -50,7 +50,7 @@ function wp_awld_js_settings_about_page()
 		<p><?php _e( 'The author has no affiliations with the Institute for the Study of the Ancient World.', 'wp_awld_js' ); ?></p>
 		<p><?php echo sprintf( __( 'If you like this plugin, <a href="%1s">rate it</a> on WordPress.org or buy the author a <a href="%2s" target="_blank">cup of coffee</a>.', 'wp_awld_js' ), esc_url( 'http://wordpress.org/extend/plugins/search.php?q=awld' ), esc_url( 'http://peterherrel.com/donate/' ) ); ?></p>
 		<ul>
-		<li><?php echo sprintf(	__( 'Plugin <a href="%s" target="_blank">home page</a>', 'wp_awld_js' ), esc_url( 'http://peterherrel.com/wordpress/plugins/awld-js' ) ); ?></li>
+		<li><?php echo sprintf(	__( 'Plugin <a href="%s" target="_blank">home page</a>', 'wp_awld_js' ), esc_url( 'http://peterherrel.com/wordpress/plugins/wp-awld-js/' ) ); ?></li>
 		<li><?php echo sprintf(	__( 'Plugin <a href="%s" target="_blank">support forums</a>', 'wp_awld_js' ), esc_url( 'http://wordpress.org/support/forum/plugins-and-hacks' ) ); ?></li>
 		<li><?php echo sprintf(	__( 'Plugin on <a href="%s" target="_blank">WordPress.org</a>', 'wp_awld_js' ), esc_url( 'http://wordpress.org/extend/plugins/search.php?q=awld' ) ); ?></li>
 		<li><?php echo sprintf(	__( 'Plugin code repository on <a href="%s" target="_blank">Github</a>', 'wp_awld_js' ), esc_url( 'https://github.com/diggy/wp-awld-js' ) ); ?></li>
