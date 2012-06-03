@@ -78,10 +78,7 @@ Checkout and contribute to the plugin source code on [GitHub](https://github.com
 == Changelog ==
 
 = 0.1.1 - 03/06/2012 = 
-* version 0.1.1
-
-= 0.1 - 03/06/2012 = 
-* Initial release (beta).
+* Initial release 0.1.1
 
 == Upgrade Notice ==
 
