@@ -34,7 +34,7 @@ function wp_awld_js_settings_usage_page()
 		<p><?php _e( 'Following shortcode parameters can be configured:', 'wp_awld_js' ); ?></p>
 		<ul style="margin-left: 20px;">
 			<li><code>$href</code> (<em><?php _e( 'required', 'wp_awld_js' ); ?></em>): <?php _e( 'The href attribute (URL), i.e. the actual hyperlink to the external resource.', 'wp_awld_js' ); ?></li>
-			<li><code>$type</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The type, valid values include: <code>default</code>, <code>person</code>, <code>object</code>. Defaults to <code>default</code>.', 'wp_awld_js' ); ?></li>
+			<li><code>$type</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The type, valid values include: <code>person</code>, <code>place</code>, <code>event</code>, <code>citation</code>, <code>text</code> and <code>object</code>. Defaults to <code>default</code>.', 'wp_awld_js' ); ?></li>
 			<li>--------------------------------------------------------------</li>
 			<li><code>$title</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The title attribute of the hyperlink. Empty by default.', 'wp_awld_js' ); ?></li>
 			<li><code>$class</code> (<em><?php _e( 'optional', 'wp_awld_js' ); ?></em>): <?php _e( 'The CSS classes applied to the hyperlink. Defaults to <code>wp-awld-js</code>', 'wp_awld_js' ); ?></li>
