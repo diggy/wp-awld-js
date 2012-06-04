@@ -54,6 +54,13 @@ function wp_awld_js_settings_examples_page()
 			'notes' => 'Click through to the Nomisma page to see a map of hoards with coins of Athens in them.',
 		),
 		array(
+			'id' => 'numismatics',
+			'title' => array( 'Numismatics', 'numismatics.org', 'http://numismatics.org/' ),
+			'example' => 'The very first <a class="awld-type-object" href="http://numismatics.org/collection/1858.1.1">coin</a> ever given to the American Numismatic Society, donated by Augustus B. Sage in 1858.',
+			'code' => array( '[awld type=&#34;object&#34; href=&#34;http://numismatics.org/collection/1858.1.1&#34;]coin[/awld]' ),
+			'notes' => 'The American Numismatic Society is a museum and research institute devoted to the study of coins from all periods and cultures.',
+		),
+		array(
 			'id' => 'opencontext',
 			'title' => array( 'Open Context', 'opencontext.org', 'http://opencontext.org/' ),
 			'example' => '<a class="awld-type-object" href="http://opencontext.org/subjects/73221A18-7A7C-44C4-36CD-0CECF8F7A725">This sherd published by OpenContext.org</a> shows that ARS was carried to Petra in Jordan.',
