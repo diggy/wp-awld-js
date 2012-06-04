@@ -123,6 +123,13 @@ function wp_awld_js_settings_examples_page()
 			'code' => array( '[awld class=&#34;noise&#34; type=&#34;person&#34; href=&#34;http://fr.wikipedia.org/wiki/Alexandre_le_Grand&#34;]Alexander the Great[/awld]' ),
 			'notes' => 'This is a fun foible as the popover shows the blurb for the French romance!',
 		),
+		array(
+			'id' => 'ikmk',
+			'title' => array( 'Münzkabinett Berlin', 'smb.museum/ikmk/', 'http://www.smb.museum/ikmk/' ),
+			'example' => '<a class="awld-type-object" href="http://www.smb.museum/ikmk/object.php?id=18200915">Incertum</a> ca. 650-600 v. Chr.',
+			'code' => array( '[awld type=&#34;object&#34; href=&#34;http://www.smb.museum/ikmk/object.php?id=18200915&#34;]Incertum[/awld]' ),
+			'notes' => 'The Münzkabinett of the Staatliche Museen zu Berlin is one of the largest Numismatic Collections in the world.',
+		),
 		/*array(
 			'id' => '',
 			'title' => array( '', '', '' ),
