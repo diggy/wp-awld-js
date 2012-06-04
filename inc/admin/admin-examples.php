@@ -125,10 +125,17 @@ function wp_awld_js_settings_examples_page()
 		),
 		array(
 			'id' => 'ikmk',
-			'title' => array( 'Münzkabinett Berlin', 'smb.museum/ikmk/', 'http://www.smb.museum/ikmk/' ),
+			'title' => array( 'Münzkabinett Berlin', 'smb.museum', 'http://www.smb.museum/ikmk/' ),
 			'example' => '<a class="awld-type-object" href="http://www.smb.museum/ikmk/object.php?id=18200915">Incertum</a> ca. 650-600 v. Chr.',
 			'code' => array( '[awld type=&#34;object&#34; href=&#34;http://www.smb.museum/ikmk/object.php?id=18200915&#34;]Incertum[/awld]' ),
 			'notes' => 'The Münzkabinett of the Staatliche Museen zu Berlin is one of the largest Numismatic Collections in the world.',
+		),
+		array(
+			'id' => 'sudoc',
+			'title' => array( 'Sudoc', 'sudoc.abes.fr', 'http://www.sudoc.abes.fr/' ),
+			'example' => '<a class="awld-type-citation" href="http://www.sudoc.fr/058578307">Death on the Nile</a> by <strike>Agatha Christie</strike> Walter Scheidel',
+			'code' => array( '[awld type=&#34;citation&#34; href=&#34;http://www.sudoc.fr/058578307&#34;]Death on the Nile[/awld]' ),
+			'notes' => 'The <em>Système Universitaire de Documentation</em> (Sudoc) catalogue is a French collective catalogue created by Higher Educational and Research libraries and resource centres.',
 		),
 		/*array(
 			'id' => '',
