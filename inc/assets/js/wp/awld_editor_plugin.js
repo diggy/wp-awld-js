@@ -19,6 +19,10 @@
 								a.addImmediate(b,"Link", '[awld href=""][/awld]');								
 								b.addSeparator();								
 								a.addImmediate(b,"Person", '[awld type="person" href=""][/awld]');
+								a.addImmediate(b,"Place", '[awld type="place" href=""][/awld]');
+								a.addImmediate(b,"Event", '[awld type="event" href=""][/awld]');
+								a.addImmediate(b,"Citation", '[awld type="citation" href=""][/awld]');
+								a.addImmediate(b,"Text", '[awld type="text" href=""][/awld]');
 								a.addImmediate(b,"Object", '[awld type="object" href=""][/awld]');
 								b.addSeparator();								
 								a.addImmediate(b,"Index", '[awld_index]');
