@@ -24,11 +24,11 @@ function wp_awld_js_settings_about_page()
 	<p class="about-description"><?php _e( 'Awld.js is a javascript library for Ancient World Linked Data. It adds functionality and visual elements to your WordPress powered website based on links to stable URIs relevant to the study of the Ancient World.', 'wp_awld_js' ); ?></p>
 	<div class="welcome-panel-column-container">
 	<div class="welcome-panel-column">
-		<h4><span class="icon16 icon-"></span> <?php _e( 'About awld.js' ); ?></h4>
+		<h4><span class="icon16 icon-"></span> <?php _e( 'About awld.js', 'wp_awld_js' ); ?></h4>
 		<p><?php echo sprintf( __( 'Awld.js is a project of the <a href="%s" target="_blank">Institute for the Study of the Ancient World</a>.', 'wp_awld_js' ), esc_url( 'http://www.nyu.edu/isaw/' ) ); ?></p>
 		<p><?php _e( 'The project is overseen by <strong>Sebastian Heath</strong>.', 'wp_awld_js' ); ?></p>
 		<p><?php _e( 'The initial implementation of the library was written by <strong>Nick Rabinowitz</strong>.', 'wp_awld_js' ); ?></p>
-		<h4><span class="icon16 icon-"></span> <?php _e( 'Links and resources' ); ?></h4>
+		<h4><span class="icon16 icon-"></span> <?php _e( 'Links and resources', 'wp_awld_js' ); ?></h4>
 		<ul>
 		<li><?php echo sprintf(	__( 'Awld.js <a href="%s" target="_blank">home page</a>', 'wp_awld_js' ), esc_url( 'http://isawnyu.github.com/awld-js/' ) ); ?></li>
 		<li><?php echo sprintf(	__( 'Awld.js <a href="%s" target="_blank">wiki</a>', 'wp_awld_js' ), esc_url( 'https://github.com/isawnyu/awld-js/wiki' ) ); ?></li>
