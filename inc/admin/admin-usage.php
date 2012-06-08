@@ -15,11 +15,11 @@ function wp_awld_js_settings_usage_page()
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'jquery-ui-accordion' );
 ?>
-<p><?php _e( 'The <em>Ancient World Linked Data for WordPress</em> plugin allows you to create enhanced links to the stable URIs relevant to the study of the Ancient World, using the awld.js library. For every external link to a registered Ancient World resource, a small popup will be shown on hover, with a preview of the resource description.', 'wp_awld_js' ); ?></p>
+<p><?php _e( 'The <em>Ancient World Linked Data for WordPress</em> plugin allows you to create enhanced links to the stable URIs relevant to the study of the Ancient World, using the awld.js library. For every external link to an Ancient World resource, a small popup will be shown on hover, with a preview of the resource description.', 'wp_awld_js' ); ?></p>
 <div id="accordion" style="margin-top:15px;">
 	<h3 class="acc" aria-expanded="true"><a href="#"><?php _e( 'Shortcode', 'wp_awld_js' ); ?></a></h3>
 	<div>
-		<p><?php _e( 'The shortcode mimics the markup of a regular HTML link, except for the tag <code>awld</code> and the square brackets:', 'wp_awld_js' ); ?></p>
+		<p><?php _e( 'The shortcode mimics the markup of a regular HTML link, e.g.:', 'wp_awld_js' ); ?></p>
 		<p style="margin-left: 20px;"><code>[awld href="http://nomisma.org/id/athens"]Athens[/awld]</code></p>
 		<p><?php echo sprintf(	__( 'Visit the <a href="%s">next tab</a> for a list of available resources and more examples.', 'wp_awld_js' ), esc_url( admin_url() . 'options-general.php?page=wp-awld-js-settings&tab=examples' ) ); ?></p>
 	</div>
