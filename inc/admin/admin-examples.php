@@ -24,10 +24,10 @@ function wp_awld_js_settings_examples_page()
 		),
 		array(
 			'id' => 'eol',
-			'title' => array( 'EOL', 'eol.org', 'http://eol.org/' ),
+			'title' => array( 'Encyclopedia of Life', 'eol.org', 'http://eol.org/' ),
 			'example' => 'EOL: <a href="http://eol.org/pages/328699">Cow</a>.',
 			'code' => array( '[awld href=&#34;http://eol.org/pages/328699&#34;]Cow[/awld]' ),
-			'notes' => 'Encyclopedia of Life. Global access to knowledge about life on Earth.',
+			'notes' => 'The Encyclopedia of Life provides global access to knowledge about life on Earth.',
 		),
 		array(
 			'id' => 'loc',
