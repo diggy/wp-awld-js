@@ -34,7 +34,7 @@ function wp_awld_js_settings_examples_page()
 			'title' => array( 'Library of Congress', 'lccn.loc.gov', 'http://lccn.loc.gov/' ),
 			'example' => 'Classical historiography is a well-established discipline.<sup><a href="http://lccn.loc.gov/a55003923">loc link</a></sup>',
 			'code' => array( '&lt;sup&gt;[awld href=&#34;http://lccn.loc.gov/a55003923&#34;]loc link[/awld]&lt;/sup&gt;' ),
-			'notes' => 'The Library of Congress works well with awld.js. The title displayed in the widget is pulled from the LOC website.',
+			'notes' => 'The Library of Congress is the nation\'s oldest federal cultural institution and serves as the research arm of Congress.',
 		),
 		array(
 			'id' => 'ikmk',
@@ -51,7 +51,7 @@ function wp_awld_js_settings_examples_page()
 				'[awld href=&#34;http://nomisma.org/id/athens&#34;]Athens[/awld]',
 				'[awld href=&#34;http://nomisma.org/id/rrc-525.4a&#34;]RRC 525/4a[/awld]'
 			),
-			'notes' => 'Click through to the Nomisma page to see a map of hoards with coins of Athens in them.',
+			'notes' => 'Nomisma.org is a collaborative effort to provide stable digital representations of numismatic concepts and entities.',
 		),
 		array(
 			'id' => 'numismatics',
@@ -65,28 +65,28 @@ function wp_awld_js_settings_examples_page()
 			'title' => array( 'Open Context', 'opencontext.org', 'http://opencontext.org/' ),
 			'example' => '<a class="awld-type-object" href="http://opencontext.org/subjects/73221A18-7A7C-44C4-36CD-0CECF8F7A725">This sherd published by OpenContext.org</a> shows that ARS was carried to Petra in Jordan.',
 			'code' => array( '[awld type=&#34;object&#34; href=&#34;http://opencontext.org/subjects/73221A18-7A7C-44C4-36CD-0CECF8F7A725&#34;]This sherd published by OpenContext.org[/awld]' ),
-			'notes' => 'Loads data from opencontext.org.',
+			'notes' => 'Open Context is a free, open access resource for the electronic publication of primary field research from archaeology and related disciplines.',
 		),
 		array(
 			'id' => 'papyri',
 			'title' => array( 'Papyri', 'papyri.info', 'http://www.papyri.info/' ),
 			'example' => 'A text from <a href="http://www.papyri.info/hgv/1357">Papyri.info</a>.',
 			'code' => array( '[awld href=&#34;http://www.papyri.info/hgv/1357&#34;]Papyri.info[/awld]' ),
-			'notes' => 'Displays more information about the cited text.',
+			'notes' => 'Papyri.info is dedicated to the study of ancient papyrological documents.',
 		),
 		array(
 			'id' => 'pelagios',
 			'title' => array( 'Pelagios', 'pelagios-project.blogspot.com', 'http://pelagios-project.blogspot.com' ),
 			'example' => '<a href="http://pleiades.stoa.org/places/433032">Pompeii</a> is a partially buried Roman town-city near modern Naples, Italy.',
 			'code' => array( '[awld href=&#34;http://pleiades.stoa.org/places/433032&#34;]Pompeii[/awld]' ),
-			'notes' => 'Format links to the Pelagios project',
+			'notes' => 'The aim of Pelagios is to help introduce Linked Open Data goodness into online resources that refer to places in the Ancient World.',
 		),
 		array(
 			'id' => 'perseus',
 			'title' => array( 'Perseus', 'data.perseus.org', 'http://data.perseus.org/' ),
 			'example' => 'First, the <a href="http://data.perseus.org/citations/urn:cts:greekLang:tlg0012.tlg001.perseus-eng1">beginning</a> of the Iliad in English. Now in <a href="http://data.perseus.org/citations/urn:cts:greekLang:tlg0012.tlg001.perseus-grc1">Greek</a> (but it needs line breaks). Here\'s the Odyssey in <a href="http://data.perseus.org/citations/urn:cts:greekLang:tlg0012.tlg002.perseus-eng1">English</a>.',
 			'code' => array( '[awld href=&#34;http://data.perseus.org/citations/urn:cts:greekLang:tlg0012.tlg001.perseus-eng1&#34;]beginning[/awld]' ),
-			'notes' => 'Load data from perseus.org.',
+			'notes' => 'The mission of Perseus is to make the full record of humanity - linguistic sources, physical artifacts, historical spaces - as intellectually accessible as possible to every human being, regardless of linguistic or cultural background.',
 		),
 		array(
 			'id' => 'pleiades',
@@ -100,7 +100,7 @@ function wp_awld_js_settings_examples_page()
 			'title' => array( 'Portable Antiquities Scheme', 'finds.org.uk', 'http://finds.org.uk/' ),
 			'example' => 'The UK\'s Portable Antiquities Scheme has registered many thousands of objects, many of them coins: some high-value (<a href="http://finds.org.uk/database/artefacts/record/id/495315">Aureus</a>), some less so (<a href="http://finds.org.uk/database/artefacts/record/id/412455">Radiate</a>).',
 			'code' => array( '[awld href=&#34;http://finds.org.uk/database/artefacts/record/id/495315&#34;]Aureus[/awld]' ),
-			'notes' => 'Loads data from finds.org.',
+			'notes' => 'The Portable Antiquities Scheme is a DCMS funded project to encourage the voluntary recording of archaeological objects found by members of the public in England and Wales.',
 		),
 		array(
 			'id' => 'sudoc',
@@ -114,14 +114,14 @@ function wp_awld_js_settings_examples_page()
 			'title' => array( 'Trismegistos', 'trismegistos.org', 'http://www.trismegistos.org/' ),
 			'example' => 'A <a href="http://www.trismegistos.org/text/13">text</a> in Trismegistos.',
 			'code' => array( '[awld href=&#34;http://www.trismegistos.org/text/13&#34;]text[/awld]' ),
-			'notes' => 'Displays more information about the cited text.',
+			'notes' => 'An interdisciplinary portal of papyrological and epigraphical resources dealing with Egypt and the Nile valley between roughly 800 BC and AD 800.',
 		),
 		array(
 			'id' => 'wikipedia',
 			'title' => array( 'Wikipedia', 'en.wikipedia.org', 'http://en.wikipedia.org/' ),
 			'example' => '<a class="awld-type-person" href="http://en.wikipedia.org/wiki/Achilles">Achilles</a> is a major character in Homer\'s Iliad.',
 			'code' => array( '[awld type=&#34;person&#34; href=&#34;http://en.wikipedia.org/wiki/Achilles&#34;]Achilles[/awld]' ),
-			'notes' => 'Note: the links in the snippets that appear for Wikipedia references aren\'t working yet because they\'re relative web addresses. Will be fixed in the future.',
+			'notes' => 'Wikipedia is written collaboratively by largely anonymous Internet volunteers who write without pay.',
 		),
 		array(
 			'id' => 'wikipedia-fr',
@@ -135,14 +135,14 @@ function wp_awld_js_settings_examples_page()
 			'title' => array( 'Worldcat', 'worldcat.org', 'http://www.worldcat.org/' ),
 			'example' => 'Petra excavation report citation.<sup><a title="M. Sharp Joukowsky, Petra Great Temple (1998)" href="http://www.worldcat.org/oclc/84948065">worldcat link</a></sup>',
 			'code' => array( '&lt;sup&gt;[awld href=&#34;http://www.worldcat.org/oclc/84948065&#34;]worldcat link[/awld]&lt;/sup&gt;' ),
-			'notes' => 'Worldcat goes to great lengths to block mashups so awld.js uses the contents of the html title attribute for display in the widget.',
+			'notes' => 'WorldCat is the world\'s largest network of library content and services. WorldCat libraries are dedicated to providing access to their resources on the Web, where most people start their search for information.',
 		),
 		array(
 			'id' => 'yale',
 			'title' => array( 'Yale Art Gallery', 'ecatalogue.art.yale.edu', 'http://ecatalogue.art.yale.edu/' ),
 			'example' => 'Yale Art Gallery: <a href="http://ecatalogue.art.yale.edu/detail.htm?objectId=139601">Posthumous Alexander</a>.',
 			'code' => array( '[awld href=&#34;http://ecatalogue.art.yale.edu/detail.htm?objectId=139601&#34;]Posthumous Alexander[/awld]' ),
-			'notes' => 'Loads data from the Yale University Art Gallery.',
+			'notes' => 'The mission of the Yale University Art Gallery is to encourage appreciation and understanding of art and its role in society through direct engagement with original works of art.',
 		),
 		/*array(
 			'id' => '',
