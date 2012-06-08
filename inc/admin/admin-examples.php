@@ -30,6 +30,13 @@ function wp_awld_js_settings_examples_page()
 			'notes' => 'The Encyclopedia of Life provides global access to knowledge about life on Earth.',
 		),
 		array(
+			'id' => 'archive_org',
+			'title' => array( 'Internet Archive', 'archive.org', 'http://archive.org/' ),
+			'example' => '<a class="awld-type-text" href="http://archive.org/details/historyanciente00rawlgoog">History of ancient Egypt</a> by George Rawlinson (1812-1902).',
+			'code' => array( '[awld type=&#34;text&#34; href=&#34;http://archive.org/details/historyanciente00rawlgoog&#34;]History of ancient Egypt[/awld]' ),
+			'notes' => 'The Internet Archive is a 501(c)(3) non-profit that was founded to build an Internet library. Its purposes include offering permanent access for researchers, historians, scholars, people with disabilities, and the general public to historical collections that exist in digital format.',
+		),
+		array(
 			'id' => 'loc',
 			'title' => array( 'Library of Congress', 'lccn.loc.gov', 'http://lccn.loc.gov/' ),
 			'example' => 'Classical historiography is a well-established discipline.<sup><a href="http://lccn.loc.gov/a55003923">loc link</a></sup>',
