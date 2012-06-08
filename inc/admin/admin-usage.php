@@ -15,7 +15,7 @@ function wp_awld_js_settings_usage_page()
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'jquery-ui-accordion' );
 ?>
-<p><?php _e( 'The <em>Ancient World Linked Data for WordPress</em> plugin allows you to create enhanced links to the stable URIs relevant to the study of the Ancient World, using the awld.js library.', 'wp_awld_js' ); ?></p>
+<p><?php _e( 'The <em>Ancient World Linked Data for WordPress</em> plugin allows you to create enhanced links to the stable URIs relevant to the study of the Ancient World, using the awld.js library. For every external link to a registered Ancient World resource, a small popup will be shown on hover, with a preview of the resource description.', 'wp_awld_js' ); ?></p>
 <div id="accordion" style="margin-top:15px;">
 	<h3 class="acc" aria-expanded="true"><a href="#"><?php _e( 'Shortcode', 'wp_awld_js' ); ?></a></h3>
 	<div>
