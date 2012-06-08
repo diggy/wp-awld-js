@@ -19,7 +19,7 @@ function wp_awld_js_settings_usage_page()
 <div id="accordion" style="margin-top:15px;">
 	<h3 class="acc" aria-expanded="true"><a href="#"><?php _e( 'Shortcode', 'wp_awld_js' ); ?></a></h3>
 	<div>
-		<p><?php _e( 'The shortcode mimics the markup of a regular HTML link, e.g.:', 'wp_awld_js' ); ?></p>
+		<p><?php _e( 'Enhanced links are created with the <code>awld</code> shortcode. The shortcode mimics the markup of a regular HTML link, e.g.:', 'wp_awld_js' ); ?></p>
 		<p style="margin-left: 20px;"><code>[awld href="http://nomisma.org/id/athens"]Athens[/awld]</code></p>
 		<p><?php echo sprintf(	__( 'Visit the <a href="%s">next tab</a> for a list of available resources and more examples.', 'wp_awld_js' ), esc_url( admin_url() . 'options-general.php?page=wp-awld-js-settings&tab=examples' ) ); ?></p>
 	</div>
