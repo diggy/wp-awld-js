@@ -13,6 +13,27 @@ Adds functionality and visual elements to your WordPress site based on links to 
 
 Ancient World Linked Data for WordPress -- Awld.js is a javascript library for Ancient World Linked Data. This plugin adds functionality and visual elements to your WordPress powered website based on links to stable URIs relevant to the study of the Ancient World.
 
+= Available resources =
+
+* Arachne (arachne.uni-koeln.de) -- Arachne is the central Object database of the German Archaeological Institute (DAI) and the Archaeological Institute of the University of Cologne.
+* Encyclopedia of Life (eol.org) -- Global access to knowledge about life on Earth.
+* Library of Congress (lccn.loc.gov)
+* Munzkabinett Berlin (smb.museum) -- The Münzkabinett of the Staatliche Museen zu Berlin is one of the largest Numismatic Collections in the world.
+* Nomisma (nomisma.org)
+* Numismatics (numismatics.org) -- The American Numismatic Society is a museum and research institute devoted to the study of coins from all periods and cultures.
+* Open Context (opencontext.org)
+* Papyri (papyri.info)
+* Pelagios (pelagios-project.blogspot.com)
+* Perseus (data.perseus.org)
+* Pleiades (pleiades.stoa.org) -- Pleiades is a community-built gazetteer and graph of ancient places.
+* Portable Antiquities Scheme (finds.org.uk)
+* Sudoc (sudoc.abes.fr) -- The Système Universitaire de Documentation (Sudoc) catalogue is a French collective catalogue created by Higher Educational and Research libraries and resource centres.
+* Trismegistos (trismegistos.org)
+* Wikipedia (en.wikipedia.org)
+* Wikipedia FR (fr.wikipedia.org)
+* Worldcat (worldcat.org)
+* Yale Art Gallery (ecatalogue.art.yale.edu)
+
 = About awld.js =
 
 Awld.js is a project of the [Institute for the Study of the Ancient World](http://www.nyu.edu/isaw/) (ISAW). The project is overseen by Sebastian Heath. The initial implementation of the library was written by [Nick Rabinowitz](http://nickrabinowitz.com/).
