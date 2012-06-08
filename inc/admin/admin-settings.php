@@ -134,7 +134,7 @@ function wp_awld_js_settings()
 					$tabs = array(
 						'about' 	=> __( 'About', 'wp_awld_js' ),
 						'usage' 	=> __( 'Usage', 'wp_awld_js' ),
-						'examples' 	=> __( 'Examples', 'wp_awld_js' ),
+						'examples' 	=> __( 'Modules', 'wp_awld_js' ),
 						'settings' 	=> __( 'Settings', 'wp_awld_js' )
 					);					
 					$tabs = apply_filters('wp_awld_js_settings_tabs_array', $tabs);					
