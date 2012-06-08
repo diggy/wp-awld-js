@@ -188,7 +188,7 @@ function wp_awld_js_settings_examples_page()
 		?>
 	</tbody>
 </table>
-<p class="description" style="text-align:right;"><?php _e( 'Last updated:', 'wp_awld_js' ); ?> 03 Jun 2012</p>
+<p class="description" style="text-align:right;"><?php _e( 'Last updated:', 'wp_awld_js' ); ?> 08 Jun 2012</p>
 <?php
 }
 }
