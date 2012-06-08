@@ -5,7 +5,7 @@
 Plugin Name: Ancient World Linked Data for WordPress
 Plugin URI: http://peterherrel.com/wordpress/plugins/awld-js
 Description: Awld.js is a javascript library for Ancient World Linked Data. This WordPress plugin uses the Awld.js library to add functionality and visual elements to your WordPress powered website, based on links to stable URIs relevant to the study of the Ancient World.
-Version: 0.1.1
+Version: 0.1.2
 Author: Peter J. Herrel
 Author URI: http://peterherrel.com/
 License: GPL3
@@ -69,7 +69,7 @@ if ( ! class_exists( 'Wp_Awld_Js' ) ) {
  */
 class Wp_Awld_Js
 {	
-	var $version = '0.1.1';	
+	var $version = '0.1.2';	
 	var $plugin_dir_url = '';
 
 	/**
