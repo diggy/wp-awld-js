@@ -15,19 +15,20 @@ Ancient World Linked Data for WordPress -- Awld.js is a javascript library for A
 
 = Available resources =
 
-* Arachne (arachne.uni-koeln.de) -- Arachne is the central Object database of the German Archaeological Institute (DAI) and the Archaeological Institute of the University of Cologne.
-* Encyclopedia of Life (eol.org) -- Global access to knowledge about life on Earth.
+* Arachne (arachne.uni-koeln.de)
+* Encyclopedia of Life (eol.org)
+* Internet Archive (archive.org)
 * Library of Congress (lccn.loc.gov)
-* Munzkabinett Berlin (smb.museum) -- The Münzkabinett of the Staatliche Museen zu Berlin is one of the largest Numismatic Collections in the world.
+* Munzkabinett Berlin (smb.museum)
 * Nomisma (nomisma.org)
-* Numismatics (numismatics.org) -- The American Numismatic Society is a museum and research institute devoted to the study of coins from all periods and cultures.
+* Numismatics (numismatics.org)
 * Open Context (opencontext.org)
 * Papyri (papyri.info)
 * Pelagios (pelagios-project.blogspot.com)
 * Perseus (data.perseus.org)
-* Pleiades (pleiades.stoa.org) -- Pleiades is a community-built gazetteer and graph of ancient places.
+* Pleiades (pleiades.stoa.org)
 * Portable Antiquities Scheme (finds.org.uk)
-* Sudoc (sudoc.abes.fr) -- The Système Universitaire de Documentation (Sudoc) catalogue is a French collective catalogue created by Higher Educational and Research libraries and resource centres.
+* Sudoc (sudoc.abes.fr)
 * Trismegistos (trismegistos.org)
 * Wikipedia (en.wikipedia.org)
 * Wikipedia FR (fr.wikipedia.org)
