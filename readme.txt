@@ -3,7 +3,7 @@ Contributors: donutz
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAY79HJWYKPQE
 Tags:  links, data, linked data, semantic, isaw, lawdi, awld, awld-js, ancient world, history, science, wikipedia, loc, library of congress, opencontext, pleiades, perseus, pelagios, finds-org, worldcat, nomisma, arachne, trismegistos, papyri, eol, yale, numismatics, archive-org
 Requires at least: 3.3
-Tested up to: 3.4
+Tested up to: 3.5.1
 Stable tag: 0.1.2
 License: GPLv3
 
