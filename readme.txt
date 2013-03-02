@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  links, data, linked data, semantic, isaw, lawdi, awld, awld-js, ancient world, history, science, wikipedia, loc, library of congress, opencontext, pleiades, perseus, pelagios, finds-org, worldcat, nomisma, arachne, trismegistos, papyri, eol, yale, numismatics, archive-org
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 0.1.2
+Stable tag: 0.1.3
 License: GPLv3
 
 Adds functionality and visual elements to your WordPress site based on links to stable URIs relevant to the study of the Ancient World.
@@ -99,6 +99,11 @@ Checkout and contribute to the plugin source code on [GitHub](https://github.com
 
 == Changelog ==
 
+= 0.1.3 - 02/03/2013 = 
+* Minor update
+* code cleanup
+* 3.5+ admin interface
+
 = 0.1.2 - 09/06/2012 = 
 * new module: Internet Archive (archive.org)
 * updated papyri.info module
@@ -109,6 +114,9 @@ Checkout and contribute to the plugin source code on [GitHub](https://github.com
 * Initial release 0.1.1
 
 == Upgrade Notice ==
+
+= 0.1.3 =
+Minor update, 3.5+ admin interface and code cleanup
 
 = 0.1.2 =
 Minor update, changes to note:
