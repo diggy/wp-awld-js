@@ -4,34 +4,41 @@
  * 
  * Main admin file.
  *
- * @author 		Peter J. Herrel
- * @category 	Admin
- * @package 	AWLD JS for WordPress
+ * @author      Peter J. Herrel
+ * @category    Admin
+ * @package     AWLD JS for WordPress
  */
 
 /**
  * Admin Menu
  */
+add_action( 'admin_menu', 'wp_awld_js_admin_menu' );
 function wp_awld_js_admin_menu()
 {
-	global $menu, $wp_awld_js;	
-    $main_page = add_options_page( __( 'AWLD Linked Data', 'wp_awld_js' ), __( 'AWLD Linked Data', 'wp_awld_js' ), 'manage_options', 'wp-awld-js-settings' , 'wp_awld_js_settings_page' );  
+    global $menu, $wp_awld_js;
+    $main_page = add_options_page(
+        __( 'AWLD Linked Data', 'wp_awld_js' )
+        ,__( 'AWLD Linked Data', 'wp_awld_js' )
+        ,'manage_options'
+        ,'wp-awld-js-settings'
+        ,'wp_awld_js_settings_page'
+    );
 }
-add_action( 'admin_menu', 'wp_awld_js_admin_menu' );
 
 /**
  * Includes
  */
 function wp_awld_js_settings_page()
 {
-	include_once( 'admin-forms.php' );
-	include_once( 'admin-settings.php' );
-	wp_awld_js_settings();
+    include_once( 'admin-forms.php' );
+    include_once( 'admin-settings.php' );
+    wp_awld_js_settings();
 }
 
 /**
  * tinyMCE button
  */
+add_filter( 'mce_buttons', 'wp_awld_js_add_buttons_wysiwyg_editor' );
 function wp_awld_js_add_buttons_wysiwyg_editor( $mce_buttons )
 {
     $pos = array_search( 'wp_more', $mce_buttons, true );
@@ -42,49 +49,49 @@ function wp_awld_js_add_buttons_wysiwyg_editor( $mce_buttons )
     }
     return $mce_buttons;
 }
-add_filter( 'mce_buttons', 'wp_awld_js_add_buttons_wysiwyg_editor' );
 
+add_action( 'init', 'wp_awld_js_add_shortcode_button' );
 function wp_awld_js_add_shortcode_button()
 {
-	if ( ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) ) return;
-	if ( get_user_option( 'rich_editing' ) == 'true' && get_option( 'wp_awld_js_button' ) == 'yes' ) :
-		add_filter( 'mce_external_plugins', 'wp_awld_js_add_shortcode_tinymce_plugin' );
-		add_filter( 'mce_buttons', 'wp_awld_js_register_shortcode_button' );
-	endif;
+    if ( ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) ) return;
+    if ( get_user_option( 'rich_editing' ) == 'true' && get_option( 'wp_awld_js_button' ) == 'yes' ) :
+        add_filter( 'mce_external_plugins', 'wp_awld_js_add_shortcode_tinymce_plugin' );
+        add_filter( 'mce_buttons', 'wp_awld_js_register_shortcode_button' );
+    endif;
 }
-add_action( 'init', 'wp_awld_js_add_shortcode_button' );
 
 function wp_awld_js_register_shortcode_button( $buttons )
 {
-	array_push($buttons, "|", "wp_awld_js_shortcodes_button" );
-	return $buttons;
+    array_push($buttons, "|", "wp_awld_js_shortcodes_button" );
+    return $buttons;
 }
 
 function wp_awld_js_add_shortcode_tinymce_plugin( $plugin_array )
 {
-	global $wp_awld_js;
-	$plugin_array['AwldShortcodes'] = $wp_awld_js->plugin_dir_url . 'inc/assets/js/wp/awld_editor_plugin.js';
-	return $plugin_array;
+    global $wp_awld_js;
+    $plugin_array['AwldShortcodes'] = $wp_awld_js->plugin_dir_url . 'inc/assets/js/wp/awld_editor_plugin.js';
+    return $plugin_array;
 }
 
+add_filter( 'tiny_mce_version', 'wp_awld_js_refresh_mce' );
 function wp_awld_js_refresh_mce( $ver )
 {
-	$ver += 3;
-	return $ver;
+    $ver += 3;
+    return $ver;
 }
-add_filter( 'tiny_mce_version', 'wp_awld_js_refresh_mce' );
 
 /**
  * Awld.js Add Quicktags to HTML editor
  **/
 if( ! function_exists( '_wp_awld_js_add_quicktags' ) )
 {
+    add_action( 'admin_print_footer_scripts',  '_wp_awld_js_add_quicktags' );
     function _wp_awld_js_add_quicktags()
     { 
-    	if ( get_option( 'wp_awld_js_quicktags' ) != 'yes' || ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) ) return;
-    	global $pagenow;
-    	if( 'post.php' == $pagenow || 'post-new.php' == $pagenow ) :
-    	?>
+        if ( get_option( 'wp_awld_js_quicktags' ) != 'yes' || ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) ) return;
+        global $pagenow;
+        if( 'post.php' == $pagenow || 'post-new.php' == $pagenow ) :
+        ?>
         <script type="text/javascript">
         /* Add custom Quicktag buttons to the editor Wordpress ver. 3.3 and above only
          *
@@ -104,7 +111,6 @@ if( ! function_exists( '_wp_awld_js_add_quicktags' ) )
         </script>
     <?php endif;
     }
-    add_action( 'admin_print_footer_scripts',  '_wp_awld_js_add_quicktags' );
 }
 
 /**
@@ -112,8 +118,8 @@ if( ! function_exists( '_wp_awld_js_add_quicktags' ) )
  */
 function activate_wp_awld_js()
 {
-	update_option( 'wp_awld_js_install', 1 );
-	install_wp_awld_js();
+    update_option( 'wp_awld_js_install', 1 );
+    install_wp_awld_js();
 }
 
 /**
@@ -121,9 +127,9 @@ function activate_wp_awld_js()
  */
 function install_wp_awld_js()
 {
-	global $wp_awld_js;
-	wp_awld_js_default_options();
-	update_option( "wp_awld_js_db_version", $wp_awld_js->version );
+    global $wp_awld_js;
+    wp_awld_js_default_options();
+    update_option( "wp_awld_js_db_version", $wp_awld_js->version );
 }
 
 /**
@@ -131,38 +137,39 @@ function install_wp_awld_js()
  */
 function wp_awld_js_default_options()
 {
-	global $wp_awld_js_settings;
-	include_once( 'admin-settings.php' );	
-	foreach ( $wp_awld_js_settings as $section ) {	
-		foreach ( $section as $value ) {	
-	        if ( isset( $value['std'] ) && isset( $value['id'] ) ) {	        		
-	       		add_option($value['id'], $value['std']);   
-	        }        
-        }        
+    global $wp_awld_js_settings;
+    include_once( 'admin-settings.php' );
+    foreach ( $wp_awld_js_settings as $section ) {
+        foreach ( $section as $value ) {
+            if ( isset( $value['std'] ) && isset( $value['id'] ) ) {
+                add_option($value['id'], $value['std']);   
+            }
+        }
     }
 }
 
 /**
  * Redirect after activation
  */
+add_action( 'admin_init', 'wp_awld_js_activ_redirect' );
 function wp_awld_js_activ_redirect()
 {
     if ( get_option( 'wp_awld_js_install' ) == 1 ) :
-    	$url = admin_url() . 'options-general.php?page=wp-awld-js-settings&tab=about&activated=1';
-    	delete_option( 'wp_awld_js_install' );
-    	wp_safe_redirect( $url );
-    	exit;
+        $url = admin_url() . 'options-general.php?page=wp-awld-js-settings&tab=about&activated=1';
+        delete_option( 'wp_awld_js_install' );
+        wp_safe_redirect( $url );
+        exit;
     endif;
 }
-add_action( 'admin_init', 'wp_awld_js_activ_redirect' );
+
 
 /**
  * Deactivation
  */
 function deactivate_wp_awld_js()
 {
-	update_option( 'wp_awld_js_uninstall', 1 );
-	uninstall_wp_awld_js();
+    update_option( 'wp_awld_js_uninstall', 1 );
+    uninstall_wp_awld_js();
 }
 
 /**
@@ -170,10 +177,10 @@ function deactivate_wp_awld_js()
  */
 function uninstall_wp_awld_js()
 {
-	global $wp_awld_js;
-	wp_awld_js_delete_options();
-	delete_option( "wp_awld_js_db_version", $wp_awld_js->version );
-	delete_option( 'wp_awld_js_uninstall' );
+    global $wp_awld_js;
+    wp_awld_js_delete_options();
+    delete_option( "wp_awld_js_db_version", $wp_awld_js->version );
+    delete_option( 'wp_awld_js_uninstall' );
 }
 
 /**
@@ -181,13 +188,13 @@ function uninstall_wp_awld_js()
  */
 function wp_awld_js_delete_options()
 {
-	global $wp_awld_js_settings;
-	include_once( 'admin-settings.php' );	
-	foreach ( $wp_awld_js_settings as $section ) {	
-		foreach ( $section as $value ) {	
-	        if ( isset( $value['id'] ) ) {	        		
-	       		delete_option( $value['id'] );   
-	        }        
-        }        
+    global $wp_awld_js_settings;
+    include_once( 'admin-settings.php' );
+    foreach ( $wp_awld_js_settings as $section ) {
+        foreach ( $section as $value ) {
+            if ( isset( $value['id'] ) ) {
+                delete_option( $value['id'] );
+            }
+        }
     }
 }
