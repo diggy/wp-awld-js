@@ -1,39 +1,63 @@
-(
-    function(){
-        var icon_url = '../wp-content/plugins/ancient-world-linked-data-for-wordpress/inc/assets/images/wp_awld_js_icon.png';
-        tinymce.create(
-            "tinymce.plugins.AwldShortcodes",
-            {
-                init: function(d,e) {},
-                createControl:function(d,e)
+/**
+ * Ancient World Linked Data plugin for WordPress
+ *
+ * TinyMCE 4.0 editor plugin, requires WordPress 3.9 or higher
+ */
+(function(){
+    tinymce.PluginManager.add('wp_awld_js_mce_button', function( editor, url ){
+        editor.addButton( 'wp_awld_js_mce_button',{
+            text: false,
+            icon: 'wp-awld-js-mce-button',
+            type: 'menubutton',
+            menu: [
                 {
-                    if(d=="wp_awld_js_shortcodes_button")
-                    {
-                        d=e.createMenuButton( "wp_awld_js_shortcodes_button",{
-                            title:"Awld.js Shortcodes",
-                            image:icon_url,
-                            icons:false
-                            });
-                            var a=this;d.onRenderMenu.add(function(c,b)
-                            {
-                                a.addImmediate(b,"Link", '[awld href=""][/awld]');
-                                b.addSeparator();
-                                a.addImmediate(b,"Person", '[awld type="person" href=""][/awld]');
-                                a.addImmediate(b,"Place", '[awld type="place" href=""][/awld]');
-                                a.addImmediate(b,"Event", '[awld type="event" href=""][/awld]');
-                                a.addImmediate(b,"Citation", '[awld type="citation" href=""][/awld]');
-                                a.addImmediate(b,"Text", '[awld type="text" href=""][/awld]');
-                                a.addImmediate(b,"Object", '[awld type="object" href=""][/awld]');
-                                b.addSeparator();
-                                a.addImmediate(b,"Index", '[awld_index]');
-                            });
-                        return d
+                    text: 'Enhanced Link',
+                    onclick: function(){
+                        editor.windowManager.open({
+                            title: 'Ancient World Linked Data',
+                            body: [
+                                {
+                                    type: 'textbox',
+                                    name: 'textName',
+                                    label: 'Text',
+                                    value: tinymce.activeEditor.selection.getContent({format:'text'})
+                                },
+                                {
+                                    type: 'textbox',
+                                    name: 'hrefName',
+                                    label: 'URL',
+                                    value: ''
+                                },
+                                {
+                                    type: 'listbox',
+                                    name: 'typeName',
+                                    label: 'Type',
+                                    'values': [
+                                        {text: 'Default', value: ''},
+                                        {text: 'Citation', value: 'citation'},
+                                        {text: 'Event', value: 'event'},
+                                        {text: 'Object', value: 'object'},
+                                        {text: 'Person', value: 'person'},
+                                        {text: 'Place', value: 'place'},
+                                        {text: 'Text', value: 'text'}
+                                    ]
+                                }
+                            ],
+                            onsubmit: function(e){
+                                editor.insertContent('[awld href="' + e.data.hrefName + '" type="' + e.data.typeName + '"]' + e.data.textName + '[/awld]');
+                            }
+                        });
                     }
-                    return null
                 },
-                addImmediate:function(d,e,a){d.add({title:e,onclick:function(){tinyMCE.activeEditor.execCommand( "mceInsertContent",false,a)}})}
-            }
-        );
-        tinymce.PluginManager.add( "AwldShortcodes", tinymce.plugins.AwldShortcodes);
-    }
-)();
+                {
+                    text: 'Index',
+                    onclick: function(){
+                        editor.insertContent('[awld_index]');
+                    }
+                }
+            ]
+        });
+    });
+})();
+
+/* end of file awld_editor_plugin.js */
