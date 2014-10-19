@@ -2,17 +2,17 @@
 /**
  * Examples Page
  *
- * @updated: 02 mar 2013
+ * @updated: 19 oct 2014
  */
 if ( ! function_exists( 'wp_awld_js_settings_examples_page' ) )
 {
 function wp_awld_js_settings_examples_page()
 {
     global $wp_awld_js;
-    
+
     // enqueue awld.js
     $wp_awld_js->enqueue();
-    
+
     // examples array
     $examples = array(
         array(
@@ -28,6 +28,13 @@ function wp_awld_js_settings_examples_page()
             'example'   => 'EOL: <a href="http://eol.org/pages/328699">Cow</a>.',
             'code'      => array( '[awld href=&#34;http://eol.org/pages/328699&#34;]Cow[/awld]' ),
             'notes'     => 'The Encyclopedia of Life provides global access to knowledge about life on Earth.',
+        ),
+        array(
+            'id'        => 'geonames',
+            'title'     => array( 'GeoNames', 'geonames.org', 'http://www.geonames.org/' ),
+            'example'   => '<a href="http://www.geonames.org/maps/google_30.33_35.441.html">Petra</a> is a historical and archaeological city in the southern Jordanian governorate of Ma\'an.',
+            'code'      => array( '[awld href=&#34;http://www.geonames.org/maps/google_30.33_35.441.html&#34;]Petra[/awld]' ),
+            'notes'     => 'The GeoNames geographical database covers all countries and contains over eight million placenames that are available for download free of charge.',
         ),
         array(
             'id'        => 'archive_org',
@@ -195,7 +202,7 @@ function wp_awld_js_settings_examples_page()
         ?>
     </tbody>
 </table>
-<p class="description" style="text-align:right;"><?php _e( 'Last updated:', 'wp_awld_js' ); ?> 08 Jun 2012</p>
+<p class="description" style="text-align:right;"><?php _e( 'Last updated:', 'wp_awld_js' ); ?> 19 Oct 2014</p>
 <?php
 }
 }
