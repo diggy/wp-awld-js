@@ -1,10 +1,10 @@
 === Ancient World Linked Data for WordPress ===
 Contributors: donutz
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAY79HJWYKPQE
-Tags:  links, data, linked data, semantic, isaw, lawdi, awld, awld-js, ancient world, history, science, wikipedia, loc, library of congress, opencontext, pleiades, perseus, pelagios, finds-org, worldcat, nomisma, arachne, trismegistos, papyri, eol, yale, numismatics, archive-org
-Requires at least: 3.3
-Tested up to: 3.5.1
-Stable tag: 0.1.3
+Tags:  links, data, linked data, semantic, isaw, lawdi, awld, awld-js, ancient world, history, science, wikipedia, loc, library of congress, opencontext, pleiades, perseus, pelagios, finds-org, worldcat, nomisma, arachne, trismegistos, papyri, eol, yale, numismatics, archive-org, geonames-org
+Requires at least: 3.9
+Tested up to: 4.0
+Stable tag: 0.2.0
 License: GPLv3
 
 Adds functionality and visual elements to your WordPress site based on links to stable URIs relevant to the study of the Ancient World.
@@ -17,6 +17,7 @@ Ancient World Linked Data for WordPress -- Awld.js is a javascript library for A
 
 * Arachne (arachne.uni-koeln.de)
 * Encyclopedia of Life (eol.org)
+* GeoNames (geonames.org)
 * Internet Archive (archive.org)
 * Library of Congress (lccn.loc.gov)
 * Munzkabinett Berlin (smb.museum)
@@ -39,7 +40,7 @@ Ancient World Linked Data for WordPress -- Awld.js is a javascript library for A
 
 Awld.js is a project of the [Institute for the Study of the Ancient World](http://www.nyu.edu/isaw/) (ISAW). The project is overseen by Sebastian Heath. The initial implementation of the library was written by [Nick Rabinowitz](http://nickrabinowitz.com/).
 
-Find out more about the awld.js project on [Github](http://isawnyu.github.com/awld-js/).
+Find out more about the awld.js project on [Github](http://isawnyu.github.io/awld-js/).
 
 = Terms of Use =
 
@@ -75,7 +76,7 @@ Log in to your WordPress admin panel, navigate to the Plugins menu and use the s
 
 Find out more about the awld.js project on [Github](http://isawnyu.github.com/awld-js/).
 
-* [Demo](http://isawnyu.github.com/awld-js/awld-test.html)
+* [Demo](http://isawnyu.github.io/awld-js/awld-test.html)
 * [Configuration Settings](https://github.com/isawnyu/awld-js/wiki/Configuration-Settings)
 * [Writing Modules](https://github.com/isawnyu/awld-js/wiki/Writing-Modules)
 
@@ -83,13 +84,13 @@ Find out more about the awld.js project on [Github](http://isawnyu.github.com/aw
 
 Bugs related to the awld.js library can be reported on [GitHub](https://github.com/isawnyu/awld-js/issues).
 
-Bugs related to the WordPress plugin can be reported on the [WordPress support forums](http://wordpress.org/support/plugin/ancient-world-linked-data-for-wordpress) or on [GitHub](https://github.com/diggy/wp-awld-js/issues).
+Bugs related to the WordPress plugin can be reported on the [WordPress support forums](https://wordpress.org/support/plugin/ancient-world-linked-data-for-wordpress) or on [GitHub](https://github.com/diggy/wp-awld-js/issues).
 
 Idem for feature requests.
 
 = Can I contribute? =
 
-Checkout and contribute to the awld.js source code on [GitHub](http://github.com/isawnyu/awld-js).
+Checkout and contribute to the awld.js source code on [GitHub](https://github.com/isawnyu/awld-js).
 
 Checkout and contribute to the plugin source code on [GitHub](https://github.com/diggy/wp-awld-js).
 
@@ -98,6 +99,12 @@ Checkout and contribute to the plugin source code on [GitHub](https://github.com
 1. popover
 
 == Changelog ==
+
+= 0.2.0 - 19/10/2014 = 
+* code cleanup
+* Add GeoNames support
+* TinyMCE 4.0
+* requires WP 3.9 or higher
 
 = 0.1.3 - 02/03/2013 = 
 * Minor update
@@ -114,6 +121,9 @@ Checkout and contribute to the plugin source code on [GitHub](https://github.com
 * Initial release 0.1.1
 
 == Upgrade Notice ==
+
+= 0.2.0 =
+Adds GeoNames support, select text and click button to insert link, requires WP 3.9 or higher.
 
 = 0.1.3 =
 Minor update, 3.5+ admin interface and code cleanup
