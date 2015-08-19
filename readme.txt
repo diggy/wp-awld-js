@@ -3,8 +3,8 @@ Contributors: donutz
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAY79HJWYKPQE
 Tags:  links, data, linked data, semantic, isaw, lawdi, awld, awld-js, ancient world, history, science, wikipedia, loc, library of congress, opencontext, pleiades, perseus, pelagios, finds-org, worldcat, nomisma, arachne, trismegistos, papyri, eol, yale, numismatics, archive-org, geonames-org
 Requires at least: 3.9
-Tested up to: 4.2.2
-Stable tag: 0.2.0
+Tested up to: 4.3
+Stable tag: 0.2.1
 License: GPLv3
 
 Adds functionality and visual elements to your WordPress site based on links to stable URIs relevant to the study of the Ancient World.
@@ -62,7 +62,7 @@ The awld.js project is currently in the proof-of-concept, pre-alpha, use-at-your
 
 = Automatic installation =
 
-Log in to your WordPress admin panel, navigate to the Plugins menu and use the search form to search for this plugin. Click Install and WordPress will automatically complete the installation. 
+Log in to your WordPress admin panel, navigate to the Plugins menu and use the search form to search for this plugin. Click Install and WordPress will automatically complete the installation.
 
 = Manual installation =
 
@@ -70,7 +70,7 @@ Log in to your WordPress admin panel, navigate to the Plugins menu and use the s
 2. Use an FTP program, or your hosting control panel, to upload the unzipped plugin folder to the plugin directory of your WordPress installation.
 3. Log in to your WordPress admin panel and activate the plugin from the Plugins menu.
 
-== Frequently Asked Questions == 
+== Frequently Asked Questions ==
 
 = Where can I find documentation? =
 
@@ -100,27 +100,33 @@ Checkout and contribute to the plugin source code on [GitHub](https://github.com
 
 == Changelog ==
 
-= 0.2.0 - 19/10/2014 = 
+= 0.2.1 - 19/08/2015 =
+* Use PHP 5 style constructor
+
+= 0.2.0 - 19/10/2014 =
 * code cleanup
 * Add GeoNames support
 * TinyMCE 4.0
 * requires WP 3.9 or higher
 
-= 0.1.3 - 02/03/2013 = 
+= 0.1.3 - 02/03/2013 =
 * Minor update
 * code cleanup
 * 3.5+ admin interface
 
-= 0.1.2 - 09/06/2012 = 
+= 0.1.2 - 09/06/2012 =
 * new module: Internet Archive (archive.org)
 * updated papyri.info module
 * added more awld types to editor plugin
 * updated admin documentation (Munzkabinett Berlin, numismatics.org and sudoc modules)
 
-= 0.1.1 - 03/06/2012 = 
+= 0.1.1 - 03/06/2012 =
 * Initial release 0.1.1
 
 == Upgrade Notice ==
+
+= 0.2.1 =
+Minor update, WP 4.3 compatibility.
 
 = 0.2.0 =
 Adds GeoNames support, select text and click button to insert link, requires WP 3.9 or higher.

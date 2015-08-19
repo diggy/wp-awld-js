@@ -5,7 +5,7 @@
 Plugin Name: Ancient World Linked Data for WordPress
 Plugin URI: http://peterherrel.com/wordpress/plugins/wp-awld-js/
 Description: Awld.js is a javascript library for Ancient World Linked Data. This WordPress plugin uses the Awld.js library to add functionality and visual elements to your WordPress powered website, based on links to stable URIs relevant to the study of the Ancient World.
-Version: 0.2.0
+Version: 0.2.1
 Author: Peter J. Herrel
 Author URI: http://peterherrel.com/
 License: GPL3
@@ -16,11 +16,11 @@ Domain Path: /inc/lang
 
 Copyright (c) 2012-2014 Peter J. Herrel <peterherrel - gmail>
 
-Ancient World Linked Data for WordPress is free software; you can redistribute it and/or modify 
+Ancient World Linked Data for WordPress is free software; you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by the Free
 Software Foundation; either version 3 of the License, or (at your option) any later version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See the GNU Lesser General Public License for more details.
 
@@ -43,15 +43,15 @@ conditions and the following disclaimer in the documentation and/or other materi
 with the distribution.
 * Neither the name of the New York University nor the names of its contributors may be used to
 endorse or promote products derived from this software without specific prior written permission.
-    
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR 
-IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
-FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR 
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
 OF SUCH DAMAGE.
 
 ***************************************************************************************************/
@@ -72,7 +72,7 @@ if( ! class_exists( 'Wp_Awld_Js' ) )
 class Wp_Awld_Js
 {
     // vars
-    public $version         = '0.2.0';
+    public $version         = '0.2.1';
     public $version_wp      = '3.9';
     public $plugin_dir_url  = '';
 
@@ -320,7 +320,7 @@ class Wp_Awld_Js
 
             deactivate_plugins( plugin_basename( __FILE__ ) );
 
-            wp_die( 
+            wp_die(
                  sprintf( __( 'The Ancient World Linked Data plugin requires WordPress %s or higher.', 'wp_awld_js' ), $this->version_wp )
                 ,__( 'Ancient World Linked Data plugin activation error.', 'wp_awld_js' )
                 ,array( 'back_link' => true )

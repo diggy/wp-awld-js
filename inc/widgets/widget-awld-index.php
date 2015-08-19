@@ -28,7 +28,7 @@ class Wp_Awld_Js_Widget_Awld_Index extends WP_Widget
         $widget_ops = array( 'classname' => $this->awld_widget_cssclass, 'description' => $this->awld_widget_description );
 
         /* Create the widget. */
-        $this->WP_Widget('wp_awld_js_index', $this->awld_widget_name, $widget_ops);
+        parent::__construct( 'wp_awld_js_index', $this->awld_widget_name, $widget_ops );
     }
     /** @see WP_Widget */
     function widget( $args, $instance )
